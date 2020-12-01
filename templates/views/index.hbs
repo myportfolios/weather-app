@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <h1>{{>header}}</h1>
+        <p>Use this site to get your weather</p>
+        <form>
+            <input type="text" placeholder="location" />
+            <button>Search</button>
+            <p id="messageOne"></p>
+            <p id="messageTwo"></p>
+        </form>
+    </div>
+
+    {{>footer}}
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+<!-- hbs files in views folder must contain full html bootstrap template. This is not the same with files in partials-->
