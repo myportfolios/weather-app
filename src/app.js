@@ -5,8 +5,10 @@
 const express = require('express')
 const hbs = require('hbs')
 const chalk = require('chalk')
+
 const app = express()
-const axios = require("axios")
+const port = process.env.PORT || 3000
+
 
 const path = require('path');
 
@@ -127,8 +129,8 @@ app.get("*", (req,res) => {
     })
 })
 
-app.listen('3000', () => {
-    console.log(chalk.red.bold("Server started on port 3000"))
+app.listen(port, () => {
+    console.log(chalk.red.bold("Server started on port " + port))
 })
 
 
