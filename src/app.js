@@ -56,10 +56,10 @@ app.get("/about", (req, res) => {
 
 //render help page
 
-app.get("/help", (req, res) => {
-  res.render("help", {
-    helpText: "This is some helpful text",
-    title: "Help",
+app.get("/contact", (req, res) => {
+  res.render("contact", {
+    helpText: `Check out https://github.com/myportfolios on Github for some other projects`,
+    title: "Contact",
     name: "Alexander Agunbiade",
   });
 });
